@@ -3,7 +3,7 @@ import BlogList from './BlogList';
 import useFetch from './usefetch';
 
 const Home = () => {
-  const { data: blogs, isPending, error } = useFetch('/data/db.json');
+  const { data: blogs, isPending, error } = useFetch('./data/db.json');
   
   return (
     <div className="home">
