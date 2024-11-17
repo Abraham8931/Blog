@@ -10,7 +10,7 @@ const BlogDetails = () => {
       event.preventDefault();
     
       try {
-        await fetch('/data/db.json' + blog.id, {
+        await fetch('./data/db.json' + blog.id, {
           method: 'DELETE',
         });
         history.push('/');
