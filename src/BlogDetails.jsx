@@ -4,7 +4,7 @@ import useFetch from './usefetch';
 
 const BlogDetails = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('/data/db.json' + id)
+    const { data: blog, error, isPending } = useFetch('./data/db.json' + id)
     const history = useHistory();
     const handleClick = async (event) => {
       event.preventDefault();
